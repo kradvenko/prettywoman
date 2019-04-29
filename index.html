@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Agency - Start Bootstrap Theme</title>
+  <title>Hospital Veterinario Vironchi</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,8 +20,27 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
+
+  <style>
+      .google-maps {
+          position: relative;
+          padding-bottom: 75%;
+          height: 0;
+          overflow: hidden;
+      }
+      .google-maps iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+      }
+  </style>
 
 </head>
 
@@ -39,19 +58,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Clientes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Acerca de</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" href="#team">Equipo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -372,8 +391,8 @@
       </div>
     </div>
   </section>
-
-  <!-- Clients -->
+  <!--
+  
   <section class="py-5">
     <div class="container">
       <div class="row">
@@ -400,16 +419,23 @@
       </div>
     </div>
   </section>
-
+  -->
   <!-- Contact -->
   <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Contacto</h2>
+          <h3 class="section-subheading text-muted">Nos encontramos en Av. Guadalupe Victoria 443A, Colonia Heriberto Casas, En Tepic, Nayarit.</h3>
+          <h3 class="section-subheading text-muted">Nuestro número telefónico es 311 258 1044</h3>
         </div>
       </div>
+      <div class="row">
+          <div class="col-lg-12 text-center google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d413.346641236114!2d-104.89921488133665!3d21.518395294163497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf308c058d8e71c89!2sVironchi!5e0!3m2!1ses-419!2smx!4v1556560079429!5m2!1ses-419!2smx" height="450" width="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+      </div>
+      <!--
       <div class="row">
         <div class="col-lg-12">
           <form id="contactForm" name="sentMessage" novalidate="novalidate">
@@ -443,6 +469,7 @@
           </form>
         </div>
       </div>
+    -->
     </div>
   </section>
 
@@ -705,6 +732,43 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+  <script>
+    [
+      {
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#ff8040"
+          }
+        ]
+      },
+      {
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "color": "#a43506"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#000000"
+          }
+        ]
+      }
+    ]
+  </script>
 
 </body>
 
